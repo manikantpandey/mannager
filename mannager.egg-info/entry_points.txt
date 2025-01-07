@@ -1,0 +1,2 @@
+[console_scripts]
+mannager = mannager.cli:main

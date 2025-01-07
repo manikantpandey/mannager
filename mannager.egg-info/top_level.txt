@@ -1,0 +1,3 @@
+mannager
+mannager_internals
+mannager_statics

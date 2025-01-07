@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "mannager debugger",
+            "type": "python",
+            "request": "attach",
+            "connect": {
+              "host": "localhost",
+              "port": "${input:mannagerDebugPort}"
+            }
+          }
+    ],
+    "inputs": [
+      {
+        "id": "mannagerDebugPort",
+        "description": "Debug given by mannager server",
+        "type": "promptString"
+      }
+    ]
+}

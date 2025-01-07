@@ -1,0 +1,15 @@
+{
+  "include": [
+    "mannager",
+    "mannager_internals",
+    "mannager_statics"
+  ],
+  "exclude": [
+    "tests/"
+  ],
+  "reportGeneralTypeIssues": "error",
+  "reportMissingImports": true,
+  "reportMissingTypeStubs": false,
+  "pythonVersion": "3.8",
+  "pythonPlatform": "Linux"
+}
