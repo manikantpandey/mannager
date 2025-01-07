@@ -1,0 +1,8 @@
+.mannager
+
+.git
+.gitignore
+
+__pycache__
+.venv
+.env

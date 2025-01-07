@@ -54,6 +54,28 @@ def start_resources_watcher():
     ).start()
 
 
+# def editor(headless: bool):
+#     load_dotenv(Settings.root_path / ".env")
+#     serve_message()
+#     check_latest_version()
+#     mannagerLogger.init("local")
+
+#     controller = MainController(repositories=get_editor_repositories())
+#     controller.reset_repositories()
+#     StdioPatcher.apply(controller)
+
+#     start_file_watcher()
+#     start_resources_watcher()
+#     start_consumer(controller)
+
+#     app = get_local_app(controller)
+#     server = make_server(host=HOST, port=Settings.server_port, threaded=True, app=app)
+
+#     if not headless:
+#         browser_open_editor()
+
+#     server.serve_forever()
+
 def editor(headless: bool):
     load_dotenv(Settings.root_path / ".env")
     serve_message()
