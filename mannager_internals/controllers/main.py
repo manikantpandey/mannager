@@ -411,19 +411,19 @@ class MainController:
     def get_credentials(self):
         return get_credentials()
 
-    # def get_login(self):
-    #     headers = resolve_headers()
-    #     if not headers:
-    #         return {"logged": False, "reason": "NO_API_TOKEN"}
-    #     return get_api_key_info(headers)
+    def get_login(self):
+        headers = resolve_headers()
+        if not headers:
+            return {"logged": False, "reason": "NO_API_TOKEN"}
+        return get_api_key_info(headers)
 
-    # def create_login(self, token):
-    #     set_credentials(token)
-    #     return self.get_login()
+    def create_login(self, token):
+        set_credentials(token)
+        return self.get_login()
 
-    # def delete_login(self):
-    #     delete_credentials()
-    #     return self.get_login()
+    def delete_login(self):
+        delete_credentials()
+        return self.get_login()
 
     # Project
     def get_project_info(self):
